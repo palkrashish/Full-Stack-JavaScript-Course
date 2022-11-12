@@ -1,27 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Example of Universal Selector</title>
     <style>
+        /* universal example */
+        /* means selecting entire tag and attribute */
+
         * {
-            background-color: rgb(212, 144, 144);
+            background-color: rgb(241, 192, 192);
         }
 
+        /* Individual selector */
+        /* means selecting individually any element */
+
+        p {
+            background-color: #c2beed;
+        }
+
+        /* selector (chained) is combination of two thing any performing one paragraph */
+
+        li.bg-light.bg-text-blue {
+            background-color: grey;
+            color: blue;
+
+        }
+
+        /* combined selector:- They selecting elements based on relationship betwenn them  */
+
+        span,
+        li {
+            background-color: rgb(148, 97, 97);
+        }
+
+        /* inside an element :- go to div and select child and slect grand child and change color according to the code */
+
+        div ul li {
+            background-color: orange;
+        }
+
+        /* direct child :- adding multiple  child as you wish */
+
+        div>p {
+            background-color: #2a1515;
+        }
+
+        /* sibling  ~ or +  :- adding css with subling and it's perform the just next line.. */
+        .sibling+p {
+            background-color: rgb(9, 193, 3);
+        }
     </style>
 </head>
+
 <body>
-    
-   <h1>Welcome to Learn CSS Universal Selector</h1>
+    <Div> Example of universal, Individual, selector (chained), combined selector, inside an element</Div>
+    <h1>Welcome to Learn CSS Universal Selector</h1>
 
-   <p>How are you</p>
-   <ul>
-    <li>Hope you are doing good?</li>
-    <li>May I know you  name?</li>
-    <li>Where are you from?</li>
-   </ul>
+    <span>Span is just a span, nothing more</span>
 
+    <p>How are you</p>
+    <ul>
+        <li class="bg-light bg-text-blue">Hope you are doing good?</li>
+        <li>May I know you name?</li>
+        <li>Where are you from?</li>
+    </ul>
+
+    <div>
+        <p>Example of element</p>
+        <li> Inside element</li>
+        <ul>
+            <li>I'm Inside element></a></li>
+            <li>Again, I'm Inside element</li>
+        </ul>
+    </div>
+
+    <div>
+        <p>Example of direct child</p>
+        <li> Example of direct child</li>
+        <ul>
+            <li>I'm direct child</a></li>
+            <li>Again, direct childt</li>
+        </ul>
+    </div>
+
+
+    <section>
+        <p class="sibling">Test 1</p>
+        <p>Test 2</p>
+        <p>Test 3</p>
+        <p>Test 4</p>
+        <p>Test 5</p>
+    </section>
 </body>
+
 </html>
