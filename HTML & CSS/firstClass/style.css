@@ -1,0 +1,17 @@
+body{
+    background-color: #414141;
+}
+
+div > h1 {
+    color: rgb(187, 187, 194);
+    text-align: center;
+}
+
+footer
+{
+    text-align: center;
+}
+img {
+background-size: 100px;
+background-color: transparent;
+}
