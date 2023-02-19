@@ -32,3 +32,23 @@ const changeResult = document.querySelectorAll('p');
 changeResult.forEach( function(p){
     p.textContent = 'Now, all text changed using for each method'
 } )
+
+// HOW CAN WE ADD TEXT VIA JS   
+const newPara = document.querySelector('p')
+
+newPara.textContent= 'I am adding text via JS'
+document.querySelector('body').appendChild(newPara)  //I am adding text via JS
+
+// LET'S LEARN EVENT LISTENERS
+
+document.querySelector('button').addEventListener('click', (event) =>{
+
+    event.target.textContent = ' Text will be changed when you click' // change button into this
+    console.log('button pressed!'); // here we can see into a console 
+})
+// OR
+// const btn = document.querySelector('button');
+
+// btn.addEventListener('click', ()=>{
+//     console.log('clickme');
+// })
