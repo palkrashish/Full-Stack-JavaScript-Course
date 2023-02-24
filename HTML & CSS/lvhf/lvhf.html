@@ -28,8 +28,16 @@
             font-size: 70px;
         }
         
-        
-
+        li:nth-child(even){
+            background-color: orchid;
+        }
+        li:first-child{
+            color: rgb(0, 255, 106);
+        }
+       li:last-child{
+        background-color: black;
+        color: white;
+              }
     </style>
 </head>
 <body>
@@ -39,6 +47,27 @@
     <a href="https://google.com">Google</a> <hr>
     Name: <input type="text">
     Password: <input type="password">
+    <hr>
+    <p>Example of nth-child</p>
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+        <li>Five</li>
+        <li>Six</li>
+        <li>Seven</li>
+        <li>Eight</li>
+        <li>Nine</li>
+        <li>Ten</li>
+    </ul>
+    <p>Example of first-child and last-child</p>
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
 
 </body>
 </html>
