@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example of Position</title>
+
+    <style>
+        p{
+            display: flex;
+            height: 300px;
+            border: 3px solid greenyellow;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid gray;
+        }
+        
+        .example {
+            border: 1px solid rgb(102, 80, 151);
+            width: 50px;
+            height: 55px;
+            display: inline-block;
+            text-align: center;
+            border-radius: 15px;
+        }
+
+        /* POSITION EXAMPLE  fixed relative absolute static sticky */
+        #one {
+            position: fixed;
+            background-color: blue;
+            bottom: 10px;
+            right: 10px;
+        }
+
+        #two{
+            position: relative;
+            background-color: rgb(178, 186, 209);
+            top: 10px;
+            right: 12px;
+        }
+
+        #three{
+            position: absolute;
+            background-color: blanchedalmond;
+            top: 100px;
+        }
+        
+        #four {
+            position: static;
+            background-color: blueviolet;
+        }
+        #five{
+            position: sticky;
+            background-color: yellow;
+            top: 10px;
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+            <div class="example" id="one">Fixed</div>
+            <div class="example" id="two" >Relative</div>
+            <div class="example" id="three">Absolute</div>
+            <div class="example" id="four">static</div>
+            <div class="example" id="five">Sticky</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea incidunt accusantium natus voluptate porro quos sunt corrupti quaerat! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga sunt nemo minus quibusdam nulla eligendi dolorum optio itaque labore officiis odio nisi, corporis quas quos illum consequuntur eos? Commodi dicta veritatis velit error autem sint excepturi! Ea dolores, rerum eius, assumenda consequuntur reiciendis exercitationem fugiat voluptatem illo minima sint voluptates voluptate ipsa dicta similique nemo fuga corporis laborum nam quod consectetur, id eveniet? Ab, eaque, ipsa sapiente quae tenetur in modi dolores beatae eum totam vero itaque dolorum nisi ratione facere minima dolore molestiae. Molestias suscipit est voluptatibus ab nemo, similique, mollitia culpa fugit itaque distinctio, ullam veritatis asperiores optio!</p>
+            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, hic quibusdam voluptates unde molestiae nesciunt dolore culpa laboriosam, facere numquam voluptate modi libero, porro nihil ad animi mollitia assumenda a dolor architecto voluptas fugiat. Nostrum, voluptatum minima. Aspernatur possimus in sunt! Neque, nihil in magnam voluptatum a earum quod minus animi quae numquam quasi ipsam hic, nesciunt aliquam optio consequuntur pariatur? Qui necessitatibus rem eveniet perspiciatis temporibus voluptates magni vitae ipsa molestias dicta cupiditate beatae tempore, recusandae corrupti dolorum illo praesentium excepturi molestiae pariatur. Quas vel officia, officiis consectetur ex, doloribus voluptate ullam, aut reprehenderit quae totam minima nostrum quis! </p>
+    </div>
+
+</body>
+</html>
