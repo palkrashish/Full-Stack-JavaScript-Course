@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Example</title>
+    <style>
+        * {
+            margin: 10px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .container img {
+            /* display: flex; */
+            /* justify-content: space-around; */
+            gap: 100px;
+        }
+        .one{
+            background-color: greenyellow;
+            border: 1px solid gray;
+            width: 50px;
+            height: 20px;
+        }
+        
+         /* THIS IS EXAMPLE OF POSTION */
+        .one:hover{
+            font-size: x-large;
+            background-color: rgb(118, 173, 34);
+            width: 70px;
+            height: 30px;
+            padding: 10px;
+
+        }
+
+        div ul {
+            display: flex;
+            background-color: gray;
+            list-style-type: none;
+        }
+
+        div p {
+            font-size: 100px;
+            color: bisque;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <img src="#" alt="logo">
+        <H1> flex is working on any navbar convert into vertical to horizontal </H1>
+        <div class="one">Home</div>
+        <div class="one">About</div>
+        <div class="one">Contact</div>
+        <div class="one">Gallery</div>
+        <div class="one">Help</div>
+
+
+        <div>
+            <p>Lorem, ipsum dolor.</p>
+            <ul>
+                <li>Hello</li>
+                <li>Boy</li>
+                <li>Are</li>
+                <li>You</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
