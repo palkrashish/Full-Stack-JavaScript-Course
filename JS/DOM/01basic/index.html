@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - 1</title>
+    <!-- <script src="./script.js"></script> -->
+</head>
+<body>
+
+    <p class="pTag">lorem <span>Example</span> </p>
+    <h1 class="htag" id="h1id">how are u <span>Welcome</span> </h1>
+    <h3>Example of DOM</h3>
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+        <li>Five</li>
+    </ul>
+
+    <ul>
+        <li class="tech" >JavaScript</li>
+        <li class="tech">ReactJS</li>
+        <li class="tech">Node.js</li>
+        <li class="tech">Git</li>
+    </ul>
+   <script>
+    // console.log(document.body)
+    // console.log(document.head)
+    // console.log(document.body.firstElementChild)
+    // console.log(document.body.lastElementChild)
+
+    // // Example of Id
+    // let val =document.getElementById("h1id")
+    // console.log(val.innerText)
+    // console.log(val.innerHTML) // Same as text what we have write in html
+
+    // EXAMPLE OF CLASS
+
+    // let result = document.getElementsByClassName('tech')
+    // console.log(result)
+    //     console.log(result[0].innerText)
+    //     console.log(result[1].innerText)
+    //     console.log(result[2].innerText)
+    //     console.log(result[3].innerText)
+    //     result[0].innerHTML = 'Ashish'
+   
+
+   // QUERY SELECTOR
+
+//    let querySelectoResult = document.querySelectorAll(".pTag")
+//    console.log(querySelectoResult[0].innerText)
+
+    let  result = document.querySelector('#h1id') // for ID DOM manipulation
+    console.log(result.innerHTML)
+</script>
+</body>
+</html>
