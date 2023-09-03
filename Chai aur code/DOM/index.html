@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Learning with Chai and code</title>
+  </head>
+  <body style="background-color: #818181">
+    <!-- <h1>JS - Chai and code</h1 > -->
+    <script>
+      const div = document.createElement("h1");
+      console.log(div)
+      div.className='parent'
+      div.style.backgroundColor='red'
+      div.setAttribute('title', 'generated')
+      const addText =document.createTextNode('Chai aur code with')
+      div.appendChild(addText)
+      document.body.appendChild(div)
+    </script>
+  </body>
+</html>
