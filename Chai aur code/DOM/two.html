@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOM -2 JS</title>
   </head>
-  <body style="background-color: #818181;color: #fff">
+  <body style="background-color: #818181; color: #fff">
     <ul class="language">
       <li>JavaScript</li>
     </ul>
@@ -19,12 +19,16 @@
     // }
     // addLanguage('TypeScript')
 
-    function optAddLanguage(landName){
-        const li = document.createElement('li')
-        li.appendChild(document.createTextNode(landName))
-        document.querySelector('.language').appendChild(li)
+    function optAddLanguage(landName) {
+      const li = document.createElement("li");
+      li.appendChild(document.createTextNode(landName));
+      document.querySelector(".language").appendChild(li);
     }
-    optAddLanguage('Node.js')
-    optAddLanguage('ReactJS')
+    optAddLanguage("Node.js");
+    optAddLanguage("ReactJS");
+
+    // EDIT
+    const editLang = document.querySelector('li:nth-child(1)')
+    editLang.innerHTML = 'C++'
   </script>
 </html>
