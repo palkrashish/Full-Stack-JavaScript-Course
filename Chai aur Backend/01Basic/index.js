@@ -6,3 +6,5 @@
 const  app = require ('../01Basic/app')
 
 console.log(app)
+console.log(app.x)
+console.log(app.y)
