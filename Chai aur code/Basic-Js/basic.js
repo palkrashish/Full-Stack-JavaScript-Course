@@ -91,5 +91,11 @@ console.log(userDetails.name)
 
 userDetails.email = 'palkrashishatherategmail'
 console.log(userDetails.email)
-Object.freeze(userDetails)
+// Object.freeze(userDetails)
 console.log(userDetails)
+
+
+userDetails.Rewards = function(){
+    console.log(`Welcome to my website ${this.name}`)
+}
+console.log(userDetails.Rewards())
