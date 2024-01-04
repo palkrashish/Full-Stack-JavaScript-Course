@@ -1,0 +1,57 @@
+// const numbers = [9, 29, 424, 13, 1,12,2,3,5,6];
+// console.log(numbers)
+// const result = numbers.shift()
+// console.log(result)
+// console.log(numbers.unshift(0,3,9))
+// console.log(numbers)
+
+
+// const result = numbers.find((num) => num >2)
+// console.log(result)
+
+
+// const result = numbers.sort()
+// console.log(result)
+
+
+// const fruits = [' Banana', 'Apple', 'Orange', 'Grapes']
+// const allFruites = fruits.join("\t")
+// // console.log(allFruites)
+
+
+// let myYouTube = 'hiteshchoudhary.com'
+// let another = myYouTube
+// another = 'chaiaurcode'
+// console.log(myYouTube)
+// console.log(another)
+
+
+// learning = 'js'
+// console.log(learning)
+
+// Data type checking
+
+// let name = 'Ashish'
+
+// console.log(typeof name);
+
+// ------------------------------------MATH EXAMPLE ---------------------------------
+
+// console.log(Math);
+// console.log(Math.min(3,5,2,6,4,2,3));
+// console.log(Math.max(3,5,2,6,4,2,3));
+
+// console.log((Math.random()*10)+1)
+
+// console.log(Math.floor  (Math.random()*10)+1)
+
+
+// ----------------------DATE--------------------
+
+let myDate = new Date()
+console.log(myDate)
+console.log(myDate.toString())
+console.log(myDate.toLocaleString())
+console.log(myDate.toDateString())
+console.log(myDate.toLocaleDateString())
+// console.log(myDate.toLocaleString())
