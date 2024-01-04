@@ -69,6 +69,27 @@
 
 // ---------------------Array ---------------------------------
 
-let myArray = [1,2,3,4,5,6,7,8,9,10]
-console.log(myArray)
-console.log(myArray.reverse())
+// let myArray = [1,2,3,4,5,6,7,8,9,10]
+// console.log(myArray)
+// console.log(myArray.reverse())
+
+// -------------------------------Object---------------------------------
+
+const symDisplay =  Symbol('value')
+const userDetails = {
+    name: 'Ashish',
+    age: 18,
+    [symDisplay]: 'value',
+    hobbies: 'watching south moive',
+    email: 'ashish@gmail.com',
+    dayofLogin: ['Monday','Tuesday']
+}
+console.log(userDetails.name)
+// console.log(userDetails.dayofLogin)
+// console.log(userDetails[symDisplay])
+// console.log(typeof userDetails[symDisplay])
+
+userDetails.email = 'palkrashishatherategmail'
+console.log(userDetails.email)
+Object.freeze(userDetails)
+console.log(userDetails)
