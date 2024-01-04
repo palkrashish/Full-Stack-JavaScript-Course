@@ -48,10 +48,27 @@
 
 // ----------------------DATE--------------------
 
-let myDate = new Date()
-console.log(myDate)
-console.log(myDate.toString())
-console.log(myDate.toLocaleString())
-console.log(myDate.toDateString())
-console.log(myDate.toLocaleDateString())
+// let myDate = new Date()
+// console.log(myDate)
+// console.log(myDate.toString())
 // console.log(myDate.toLocaleString())
+// console.log(myDate.toDateString())
+// console.log(myDate.toLocaleDateString())
+// console.log(myDate.toLocaleString())
+
+// ----------------------------How to define a specific date using Date------------------------
+
+// let date = new Date(2023,0,21)
+
+// console.log(date.toDateString())
+// console.log(date.toLocaleDateString())
+
+// const time =  Date.now()
+// console.log(Math.floor(Date.now()/1000))
+
+
+// ---------------------Array ---------------------------------
+
+let myArray = [1,2,3,4,5,6,7,8,9,10]
+console.log(myArray)
+console.log(myArray.reverse())
