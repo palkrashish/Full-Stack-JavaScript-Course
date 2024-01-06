@@ -140,4 +140,10 @@ function additionNum  (num, num1){
     console.log('Hello I am after the return')
 }
 const result = additionNum(3,100)
-console.log('Now Addition:', result)
+// console.log('Now Addition:', result)
+
+function userName (param){
+    return `${param} just logged in`
+}
+
+console.log(userName('Ashish'))
