@@ -84,18 +84,35 @@ const userDetails = {
     email: 'ashish@gmail.com',
     dayofLogin: ['Monday','Tuesday']
 }
-console.log(userDetails.name)
+// console.log(userDetails.name)
 // console.log(userDetails.dayofLogin)
 // console.log(userDetails[symDisplay])
 // console.log(typeof userDetails[symDisplay])
 
-userDetails.email = 'palkrashishatherategmail'
-console.log(userDetails.email)
-// Object.freeze(userDetails)
-console.log(userDetails)
+// userDetails.email = 'palkrashishatherategmail'
+// console.log(userDetails.email)
+// // Object.freeze(userDetails)
+// console.log(userDetails)
 
 
-userDetails.Rewards = function(){
-    console.log(`Welcome to my website ${this.name}`)
+// userDetails.Rewards = function(){
+//     console.log(`Welcome to my website ${this.name}`)
+// }
+// console.log(userDetails.Rewards())
+
+
+let userData = {
+    name: 'Ashish',
+    age: 19,
+    
 }
-console.log(userDetails.Rewards())
+
+let jobTitle = {
+    Designation: 'UI developer',
+    Company: ' MNC',
+    Address: 'Gurgaon'
+}
+
+
+const employeeDetails ={...userData, ...jobTitle}
+console.log(employeeDetails)
