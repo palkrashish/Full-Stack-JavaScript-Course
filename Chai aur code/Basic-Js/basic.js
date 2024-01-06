@@ -142,8 +142,14 @@ function additionNum  (num, num1){
 const result = additionNum(3,100)
 // console.log('Now Addition:', result)
 
-function userName (param){
+function userName (param='Guest'){
+    if(!userName){
+        console.log(' Kindly input name')
+        return
+    }
     return `${param} just logged in`
 }
 
-console.log(userName('Ashish'))
+// console.log(userName('Ashish'))
+// console.log(userName(''))
+console.log(userName())
