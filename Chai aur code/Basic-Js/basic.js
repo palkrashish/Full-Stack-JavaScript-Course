@@ -101,18 +101,27 @@ const userDetails = {
 // console.log(userDetails.Rewards())
 
 
-let userData = {
-    name: 'Ashish',
-    age: 19,
+// let userData = {
+//     name: 'Ashish',
+//     age: 19,
     
+// }
+
+// let jobTitle = {
+//     Designation: 'UI developer',
+//     Company: ' MNC',
+//     Address: 'Gurgaon'
+// }
+
+
+// const employeeDetails ={...userData, ...jobTitle}
+// console.log(employeeDetails)
+
+
+// ------------------Function----------------------------------------
+
+function sayName (){
+    console.log('Ashish')
 }
-
-let jobTitle = {
-    Designation: 'UI developer',
-    Company: ' MNC',
-    Address: 'Gurgaon'
-}
-
-
-const employeeDetails ={...userData, ...jobTitle}
-console.log(employeeDetails)
+sayName
+// sayName()
