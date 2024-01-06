@@ -127,10 +127,17 @@ sayName
 // sayName()
 
 
+// function additionNum  (num, num1){
+
+//     let result = num + num1
+//     console.log(result)
+// }
+
 function additionNum  (num, num1){
 
     let result = num + num1
-    console.log(result)
+    return result;
+    console.log('Hello I am after the return')
 }
-
-additionNum(3,100)
+const result = additionNum(3,100)
+console.log('Now Addition:', result)
