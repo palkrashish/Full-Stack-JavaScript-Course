@@ -125,3 +125,12 @@ function sayName (){
 }
 sayName
 // sayName()
+
+
+function additionNum  (num, num1){
+
+    let result = num + num1
+    console.log(result)
+}
+
+additionNum(3,100)
