@@ -133,23 +133,41 @@ sayName
 //     console.log(result)
 // }
 
-function additionNum  (num, num1){
+// function additionNum  (num, num1){
 
-    let result = num + num1
-    return result;
-    console.log('Hello I am after the return')
-}
-const result = additionNum(3,100)
-// console.log('Now Addition:', result)
+//     let result = num + num1
+//     return result;
+//     console.log('Hello I am after the return')
+// }
+// const result = additionNum(3,100)
+// // console.log('Now Addition:', result)
 
-function userName (param='Guest'){
-    if(!userName){
-        console.log(' Kindly input name')
-        return
-    }
-    return `${param} just logged in`
-}
+// function userName (param='Guest'){
+//     if(!userName){
+//         // console.log(' Kindly input name')
+//         return
+//     }
+//     return `${param} just logged in`
+// }
 
 // console.log(userName('Ashish'))
 // console.log(userName(''))
-console.log(userName())
+// console.log(userName())
+
+// ----------------------------This---------------------
+
+const studentInfo ={
+    name: 'Ashish Kr Pal',
+    course: 'FSJS',
+
+    greetingMessage: function (){
+        console.log(`Welcome ${studentInfo.name} to our course `)
+        //This is best syntax to use 'this' keyword
+        console.log(`Welcome ${this.name} to our course `)
+    }
+}
+
+studentInfo.greetingMessage()
+
+studentInfo.name = 'Ashiq'
+studentInfo.greetingMessage()
