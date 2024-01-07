@@ -162,8 +162,11 @@ const studentInfo = {
 
 // console.log(this)
 
-const sumTwo = (num1, num2) => {
-  return num1 + num2;
-};
+// const sumTwo = (num1, num2) => {
+//   return num1 + num2;
+// };
 
+
+const sumTwo = (num1, num2) =>  num1 + num2;
+  
 console.log(sumTwo(313, 4));
