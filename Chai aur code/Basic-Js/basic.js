@@ -5,26 +5,21 @@
 // console.log(numbers.unshift(0,3,9))
 // console.log(numbers)
 
-
 // const result = numbers.find((num) => num >2)
 // console.log(result)
-
 
 // const result = numbers.sort()
 // console.log(result)
 
-
 // const fruits = [' Banana', 'Apple', 'Orange', 'Grapes']
 // const allFruites = fruits.join("\t")
 // // console.log(allFruites)
-
 
 // let myYouTube = 'hiteshchoudhary.com'
 // let another = myYouTube
 // another = 'chaiaurcode'
 // console.log(myYouTube)
 // console.log(another)
-
 
 // learning = 'js'
 // console.log(learning)
@@ -44,7 +39,6 @@
 // console.log((Math.random()*10)+1)
 
 // console.log(Math.floor  (Math.random()*10)+1)
-
 
 // ----------------------DATE--------------------
 
@@ -66,7 +60,6 @@
 // const time =  Date.now()
 // console.log(Math.floor(Date.now()/1000))
 
-
 // ---------------------Array ---------------------------------
 
 // let myArray = [1,2,3,4,5,6,7,8,9,10]
@@ -75,15 +68,15 @@
 
 // -------------------------------Object---------------------------------
 
-const symDisplay =  Symbol('value')
+const symDisplay = Symbol("value");
 const userDetails = {
-    name: 'Ashish',
-    age: 18,
-    [symDisplay]: 'value',
-    hobbies: 'watching south moive',
-    email: 'ashish@gmail.com',
-    dayofLogin: ['Monday','Tuesday']
-}
+  name: "Ashish",
+  age: 18,
+  [symDisplay]: "value",
+  hobbies: "watching south moive",
+  email: "ashish@gmail.com",
+  dayofLogin: ["Monday", "Tuesday"],
+};
 // console.log(userDetails.name)
 // console.log(userDetails.dayofLogin)
 // console.log(userDetails[symDisplay])
@@ -94,17 +87,15 @@ const userDetails = {
 // // Object.freeze(userDetails)
 // console.log(userDetails)
 
-
 // userDetails.Rewards = function(){
 //     console.log(`Welcome to my website ${this.name}`)
 // }
 // console.log(userDetails.Rewards())
 
-
 // let userData = {
 //     name: 'Ashish',
 //     age: 19,
-    
+
 // }
 
 // let jobTitle = {
@@ -113,19 +104,16 @@ const userDetails = {
 //     Address: 'Gurgaon'
 // }
 
-
 // const employeeDetails ={...userData, ...jobTitle}
 // console.log(employeeDetails)
 
-
 // ------------------Function----------------------------------------
 
-function sayName (){
-    console.log('Ashish')
+function sayName() {
+  console.log("Ashish");
 }
-sayName
+sayName;
 // sayName()
-
 
 // function additionNum  (num, num1){
 
@@ -156,18 +144,26 @@ sayName
 
 // ----------------------------This---------------------
 
-const studentInfo ={
-    name: 'Ashish Kr Pal',
-    course: 'FSJS',
+const studentInfo = {
+  name: "Ashish Kr Pal",
+  course: "FSJS",
 
-    greetingMessage: function (){
-        console.log(`Welcome ${studentInfo.name} to our course `)
-        //This is best syntax to use 'this' keyword
-        console.log(`Welcome ${this.name} to our course `)
-    }
-}
+  greetingMessage: function () {
+    console.log(`Welcome ${studentInfo.name} to our course `);
+    //This is best syntax to use 'this' keyword
+    console.log(`Welcome ${this.name} to our course `);
+  },
+};
 
-studentInfo.greetingMessage()
+// studentInfo.greetingMessage()
 
-studentInfo.name = 'Ashiq'
-studentInfo.greetingMessage()
+// studentInfo.name = 'Ashiq'
+// studentInfo.greetingMessage()
+
+// console.log(this)
+
+const sumTwo = (num1, num2) => {
+  return num1 + num2;
+};
+
+console.log(sumTwo(313, 4));
