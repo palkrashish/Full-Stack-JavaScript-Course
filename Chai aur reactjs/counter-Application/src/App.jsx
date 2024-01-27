@@ -7,16 +7,20 @@ function App() {
   const [count, setCount] = useState(0);
 
   const addValue = () => {
-    setCount(count + 1);
+    if (count !== 20) {
+      setCount(count + 1);
+    }
   };
 
   const subValue = () => {
-    setCount(count - 1);
+    if (count !== 0) {
+      setCount(count - 1);
+    }
   };
   return (
     <>
       <div>
-      <Header />
+        <Header />
         <h2>Counter Application</h2>
         <h3>Value: {count} </h3>
         <button onClick={addValue}>Increase Value</button>
