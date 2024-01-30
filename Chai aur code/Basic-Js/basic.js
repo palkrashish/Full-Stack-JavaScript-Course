@@ -172,8 +172,12 @@ const studentInfo = {
 // const sumTwo = (num1, num2) =>  (num1 + num2)
 // if want to return Object to retun
 
-const sumTwo = (num1, num2) =>  ({username: 'Ashish'})
+// const sumTwo = (num1, num2) =>  ({username: 'Ashish'})
 
   
-console.log(sumTwo(313, 4));
+// console.log(sumTwo(313, 4));
 
+
+const a = (1,2,4)
+
+console.log(a)
